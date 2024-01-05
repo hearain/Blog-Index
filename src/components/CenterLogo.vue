@@ -4,6 +4,7 @@ import { randomNum } from "@/utils";
 import { onMounted, ref } from "vue";
 import LocalLogo from "@/assets/logo.svg";
 import { useHead } from "@unhead/vue";
+import SearchPanel from "@/components/SearchPanel.vue";
 
 defineOptions({
   name: "CenterLogo",
@@ -68,6 +69,8 @@ onMounted(() => {
     :class="['logo-area', { 'is-blur': drawerVisible }]"
     :style="{ background: `url(${$config.BACKGROUND_IMG_URL})` }"
   >
+    <!-- 搜索引擎面板-->
+    <SearchPanel />
     <div :class="['img-shadow', { 'img-shadow-show': bgLoaded }]"></div>
     <div class="inner" style="cursor: pointer" @click="goToBlog">
       <img

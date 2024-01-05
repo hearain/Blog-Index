@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { CloseSquareFilled, SketchOutlined } from "@ant-design/icons-vue";
+import { CloseSquareFilled } from "@ant-design/icons-vue";
 import { ref, toRefs, watch } from "vue";
 
 defineOptions({
@@ -62,12 +62,12 @@ function onDrawerClick(e: Event) {
         <div class="drawer__content">
           <slot></slot>
         </div>
-        <div class="drawer__footer">
-          <sketch-outlined class="footer-icon" />
-          <a href="https://github.com/EsunR/Blog-Index" target="_blank">
-            Driven by <b>EsunR/Blog-Index</b>
-          </a>
-        </div>
+        <!--        <div class="drawer__footer">-->
+        <!--          <sketch-outlined class="footer-icon" />-->
+        <!--          <a href="https://github.com/EsunR/Blog-Index" target="_blank">-->
+        <!--            Driven by <b>EsunR/Blog-Index</b>-->
+        <!--          </a>-->
+        <!--        </div>-->
       </div>
     </div>
   </teleport>
